@@ -229,7 +229,7 @@ queue_4 : "Ditambahkan ke Antrian **{0}\n\nJudul :** {1}\n**Durasi :** {2}\n**Pe
 queue_5 : "Hanya satu track di dalam antrian, Silahkan tambahkan lagi untuk check list"
 
 # All Streaming Lines
-stream_1 : "⚡ **Memulai Streaming** 💡\n\n👤 **Permintaan :** {0}\n🔦 **Informasi: **[Di Sini]({1})"
+stream_1 : "⚡ **Memulai Streaming** 💡\n\n👤 **Permintaan :** {0}\n🔦 **Informasi: **[Di Sini]({1})\n⚙️ **Dikelola oleh:** [miss]({2})"
 stream_2 : "⚡ **Memulai Streaming melalui URL ** \n\n👤**Permintaan:** {0}"
 stream_3 : "⚡ **Memulai Streaming** 💡\n\n**🏷Judul:** {0}\n⌛️**Durasi**: {1}\n👤**Permintaan:** {2} "
 stream_4 : "⚡ **Memulai Streaming** \n\n**🏷Judul:** [{0}]({1})\n⌛️**Durasi**: {2}\n👤**Permintaan:** {3}"

@@ -7,7 +7,6 @@
 #
 # All rights reserved.
 
-from typing import Union
 import random
 
 from pyrogram.types import InlineKeyboardButton
@@ -17,7 +16,7 @@ from pyrogram.types import InlineKeyboardButton
 ## After Edits with Timer Bar
 
 
-def stream_markup_timer(_, videoid, OWNER: Union[bool, int] = None):
+def stream_markup_timer(_, videoid, chat_id):
     bar = random.choice()
     buttons = [
   
@@ -27,7 +26,8 @@ def stream_markup_timer(_, videoid, OWNER: Union[bool, int] = None):
                 callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
-                text=_["S_B_7"], user_id=OWNER,
+                text=_["PL_B_3"],
+                callback_data=f"PanelMarkup {videoid}|{chat_id}",
             ),
         ],
         [
@@ -39,12 +39,13 @@ def stream_markup_timer(_, videoid, OWNER: Union[bool, int] = None):
     return buttons
 
 
-def telegram_markup_timer(_, OWNER: Union[bool, int] = None):
+def telegram_markup_timer(_, chat_id):
     buttons = [
 
         [
             InlineKeyboardButton(
-                text=_["S_B_7"], user_id=OWNER,
+                text=_["PL_B_3"],
+                callback_data=f"PanelMarkup None|{chat_id}",
             ),
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
@@ -57,7 +58,7 @@ def telegram_markup_timer(_, OWNER: Union[bool, int] = None):
 ## Inline without Timer Bar
 
 
-def stream_markup(_, videoid, OWNER: Union[bool, int] = None):
+def stream_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
@@ -65,7 +66,8 @@ def stream_markup(_, videoid, OWNER: Union[bool, int] = None):
                 callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
-                text=_["S_B_7"], user_id=OWNER,
+                text=_["PL_B_3"],
+                callback_data=f"PanelMarkup None|{chat_id}",
             ),
         ],
         [
@@ -77,11 +79,12 @@ def stream_markup(_, videoid, OWNER: Union[bool, int] = None):
     return buttons
 
 
-def telegram_markup(_, OWNER: Union[bool, int] = None):
+def telegram_markup(_, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["S_B_7"], user_id=OWNER,
+                text=_["PL_B_3"],
+                callback_data=f"PanelMarkup None|{chat_id}",
             ),
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"

@@ -384,7 +384,7 @@ class Call(PyTgCalls):
                     photo=img,
                     caption=_["stream_1"].format(
                         user,
-                        f"https://t.me/{app.username}?start=info_{videoid}",
+                        f"https://t.me/{app.username}?start=info_{videoid}",f"https://t.me/KUMiSCooLLL",
                     ),
                     reply_markup=InlineKeyboardMarkup(button),
                 )
@@ -434,7 +434,7 @@ class Call(PyTgCalls):
                     photo=img,
                     caption=_["stream_1"].format(
                         user,
-                        f"https://t.me/{app.username}?start=info_{videoid}",
+                        f"https://t.me/{app.username}?start=info_{videoid}",f"https://t.me/KUMiSCooLLL",
                     ),
                     reply_markup=InlineKeyboardMarkup(button),
                 )
@@ -521,7 +521,7 @@ class Call(PyTgCalls):
                         photo=img,
                         caption=_["stream_1"].format(
                             user,
-                            f"https://t.me/{app.username}?start=info_{videoid}",
+                            f"https://t.me/{app.username}?start=info_{videoid}",f"https://t.me/KUMiSCooLLL",
                         ),
                         reply_markup=InlineKeyboardMarkup(button),
                     )
