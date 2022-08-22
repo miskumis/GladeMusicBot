@@ -173,7 +173,7 @@ class Userbot(Client):
         if config.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("mobile_legends_unofficial")
+                await self.five.join_chat("mobilelegendsbangbang_ind")
             except:
                 pass
             assistants.append(5)

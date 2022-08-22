@@ -229,7 +229,7 @@ queue_4 : "Added to Queue **{0}\n\nTitle :** {1}\n**Duration :** {2}\n**Request 
 queue_5 : "Only one track inside queue, Please add some more to check list"
 
 # All Streaming Lines
-stream_1 : "⚡ **Memulai Streaming** 💡\n\n👤 **Requst :** {0}\n🔦 **Informasi: **[Di Sini]({1})\n⚙️ **powered by :** [miss]({2})"
+stream_1 : "⚡ **Memulai Streaming** 💡\n\n👤 **Requst :** {0}\n🔦 **Informasi: **[Di Sini]({1})"
 stream_2 : "📡 **Started Streaming via URL **\n\n**Requested :** {0}"
 stream_3 : "📡 **Started Streaming** 💡\n\n**🏷Title :** {0}\n⌛️**Duration :** {1}\n👤**Request :** {2}"
 stream_4 : "📡 **Started Streaming** 💡\n\n**🏷Title :** [{0}]({1})\n⌛️**Duration**: {2}\n👤**Request :** {3}"
