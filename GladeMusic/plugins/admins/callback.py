@@ -16,10 +16,7 @@ from GladeMusic.utils.database import (is_active_chat,
                                        set_loop)
 from GladeMusic.utils.decorators.language import languageCB
 from GladeMusic.utils.formatters import seconds_to_min
-from GladeMusic.utils.inline.play import (panel_markup_1,
-                                          panel_markup_2,
-                                          panel_markup_3,
-                                          stream_markup,
+from GladeMusic.utils.inline.play import (stream_markup,
                                           telegram_markup)
 from GladeMusic.utils.stream.autoclear import auto_clean
 from GladeMusic.utils.thumbnails import gen_thumb
