@@ -366,35 +366,35 @@ async def overall_stats(client, CallbackQuery, _):
     total_queries = await get_queries()
     blocked = len(BANNED_USERS)
     sudoers = len(await get_sudoers())
-    text = f""" **Bot's Stats and Information:**
+    text = f""" **Statistik dan Informasi Bot :**
 
-**Imported Modules:** {mod}
-**Platform:** {sc}
-**Ram:** {ram}
-**Physical Cores:** {p_core}
-**Total Cores:** {t_core}
-**Cpu Frequency:** {cpu_freq}
+**Modul Diimpor :** {mod}
+**Platform :** {sc}
+**Ram :** {ram}
+**Physical Cores :** {p_core}
+**Total Cores :** {t_core}
+**Cpu Frequency :** {cpu_freq}
 
 **Python Version :** {pyver.split()[0]}
 **Pyrogram Version :** {pyrover}
 **Py-TgCalls Version :** {pytgver}
 
-**Storage Avail:** {total[:4]} GiB
-**Storage Used:** {used[:4]} GiB
-**Storage Left:** {free[:4]} GiB
+**Storage Avail :** {total[:4]} GiB
+**Storage Used :** {used[:4]} GiB
+**Storage Left :** {free[:4]} GiB
 
-**Served Chats:** {served_chats} 
-**Served Users:** {served_users} 
-**Blocked Users:** {blocked} 
-**Sudo Users:** {sudoers} 
+**Served Chats :** {served_chats} 
+**Served Users :** {served_users} 
+**Blocked Users :** {blocked} 
+**Sudo Users :** {sudoers} 
 
-**Mongo Uptime:** {mongouptime[:4]} Days
-**Total DB Size:** {datasize[:6]} Mb
-**Total DB Storage:** {storage} Mb
-**Total DB Collections:** {collections}
-**Total DB Keys:** {objects}
-**Total DB Queries:** `{query}`
-**Total Bot Queries:** `{total_queries} `
+**Mongo Uptime :** {mongouptime[:4]} Days
+**Total DB Size :** {datasize[:6]} Mb
+**Total DB Storage :** {storage} Mb
+**Total DB Collections :** {collections}
+**Total DB Keys :** {objects}
+**Total DB Queries :** `{query}`
+**Total Bot Queries :** `{total_queries} `
     """
     med = InputMediaPhoto(media=config.STATS_IMG_URL, caption=text)
     try:
